@@ -1,0 +1,41 @@
+name: Append Label on Discussion Category Change
+
+on:
+  discussion:
+    types: [edited]
+
+jobs:
+  append_label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if the category changed and append label
+        run: |
+          # Extract current and previous category names
+          CURRENT_CATEGORY="${{ github.event.discussion.category.name }}"
+          PREVIOUS_CATEGORY=$(jq -r '.changes.category.old_value.name' <<< "${{ toJson(github.event) }}")
+
+          echo "Current Category: $CURRENT_CATEGORY"
+          echo "Previous Category: $PREVIOUS_CATEGORY"
+
+          # Check if category changed
+          if [ "$CURRENT_CATEGORY" != "$PREVIOUS_CATEGORY" ]; then
+            echo "Category has changed. Applying new label based on the current category."
+            
+            # Define the label based on the new category
+            if [ "$CURRENT_CATEGORY" == "Jira" ]; then
+              LABEL_NAME="jira"
+            elif [ "$CURRENT_CATEGORY" == "ServiceNow" ]; then
+              LABEL_NAME="ServiceNow"
+            else
+              LABEL_NAME="Other"
+            fi
+
+            # Add the new label using GitHub API
+            curl -X POST \
+              -H "Authorization: token ${{ secrets.G_TOKEN }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.discussion.number }}/labels \
+              -d "{\"labels\":[\"$LABEL_NAME\"]}"
+          else
+            echo "No category change detected. No label will be added."
+          fi
