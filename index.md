@@ -936,49 +936,28 @@
 
 
 
+
 ## Additional Discussion Stats
 
-- **Total Discussions**: 32
-- **Open Discussions**: 24
-- **Closed Discussions**: 8
+- **Total Discussions**: 0
+- **Open Discussions**: 0
+- **Closed Discussions**: 0
 
 ### Discussions by Category
 
 | Category       | Discussion Count |
 |----------------|------------------|
-| ServiceNow | 10 |
-| JIRA | 10 |
-| Teams | 7 |
-| Q&A | 2 |
-| Channels | 1 |
-| Fusion Friday | 2 |
 
 ### Recent Discussions
 
-- [test deplyoment](https://github.com/vchinnap/CloudOps-Discussions/discussions/2) - Created on 2024-10-08T04:08:47Z
-- [EC2 down](https://github.com/vchinnap/CloudOps-Discussions/discussions/3) - Created on 2024-10-08T11:50:45Z
-- [EC2 down long term solution](https://github.com/vchinnap/CloudOps-Discussions/discussions/4) - Created on 2024-10-08T11:52:25Z
-- [EC2 bug fix](https://github.com/vchinnap/CloudOps-Discussions/discussions/5) - Created on 2024-10-08T11:56:10Z
-- [please provide L2 support contact](https://github.com/vchinnap/CloudOps-Discussions/discussions/6) - Created on 2024-10-08T11:59:42Z
 
 ### Top Contributors
 
 | User         | Discussions Created |
 |--------------|---------------------|
-| @vchinnap | 32 |
 
 ### Most Engaging Discussions
 
-- [Rewatch](https://github.com/vchinnap/CloudOps-Discussions/discussions/19) - 6 comments
-- [EC2 AD Join or Un-Join issue](https://github.com/vchinnap/CloudOps-Discussions/discussions/104) - 4 comments
-- [please provide L2 support contact](https://github.com/vchinnap/CloudOps-Discussions/discussions/6) - 3 comments
-- [L2 support confluence document updated](https://github.com/vchinnap/CloudOps-Discussions/discussions/7) - 3 comments
-- [EC2 down long term solution](https://github.com/vchinnap/CloudOps-Discussions/discussions/4) - 2 comments
 
 ### Unanswered Discussions
 
-- [test deplyoment](https://github.com/vchinnap/CloudOps-Discussions/discussions/2) - Created on 2024-10-08T04:08:47Z
-- [Ansible for IAAS](https://github.com/vchinnap/CloudOps-Discussions/discussions/9) - Created on 2024-10-08T16:17:25Z
-- [Replicate Stack Overflow with Github Discussions](https://github.com/vchinnap/CloudOps-Discussions/discussions/15) - Created on 2024-10-08T16:35:44Z
-- [Cloud Operations Daily stand up meetings 09122023](https://github.com/vchinnap/CloudOps-Discussions/discussions/18) - Created on 2024-10-09T15:56:01Z
-- [S3 down](https://github.com/vchinnap/CloudOps-Discussions/discussions/23) - Created on 2024-10-09T19:04:15Z
