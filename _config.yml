@@ -3,4 +3,4 @@ description: "The centralized hub for cloud operations discussions, insights, an
 baseurl: "/CloudOps-test"
 theme: jekyll-theme-cayman
 #github:
-#   is_project_page: false
+#   is_project_page: falses
